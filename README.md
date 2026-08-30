@@ -1,46 +1,67 @@
 # Heterogeneous Graph Neural Networks (HGNN)
 
-> A research workspace for learning on heterogeneous graphs (گراف‌های ناهمگن) and modeling multiple node/edge relations.
+> Research workspace for **Heterogeneous Graph Neural Networks (HGNNs)** and relation-aware learning on structured data.
 
 ## Overview
 
-This repository studies **Heterogeneous Graph Neural Networks (HGNNs)** for problems in which a graph contains different types of entities and relationships.
+This repository explores graph learning when a problem contains multiple types of nodes, edges, and relations. The goal is to understand when heterogeneous representations provide useful information beyond a standard homogeneous Graph Neural Network (GNN).
 
-The central idea is to move beyond a single homogeneous graph representation and investigate how relation-aware message passing can improve learning on structured data.
+## Research Questions
 
-## Research Direction
+- How should heterogeneous entities and relations be represented?
+- When does relation-aware message passing improve over homogeneous GNN baselines?
+- Which graph architectures are suitable for network-intelligence and biomedical graph problems?
+- How can experiments be made reproducible and comparable?
 
-Potential applications include:
+## Potential Applications
 
-- Network intelligence
-- Complex network analysis
-- Multi-relational data
-- Biomedical brain-network analysis
-- Recommendation and relational learning
+- **Telecom & network intelligence:** multi-relational network topology and KPI graphs.
+- **Complex networks:** heterogeneous entities and interactions.
+- **Biomedical AI:** brain and physiological networks.
+- **Recommendation and relational learning:** multi-type user/item/entity graphs.
 
 ## Current Status
 
-**Early research / prototype stage.**
+**Early research / prototype stage.** This repository is a research foundation, not a finished benchmark framework. Results should be considered exploratory until they are backed by reproducible experiments.
 
-The repository is currently a research foundation rather than a finished benchmarked HGNN framework.
+## Planned Research Pipeline
 
-## Planned Work
+```text
+Raw / Structured Data
+        ↓
+Heterogeneous Graph Schema
+        ↓
+Feature & Relation Construction
+        ↓
+Homogeneous GNN Baseline
+        ↓
+HGNN Models
+        ↓
+Evaluation & Ablation
+        ↓
+Analysis / Visualization
+```
 
-- Formalize heterogeneous graph schema.
-- Implement reproducible HGNN baselines.
-- Compare homogeneous GNN and HGNN representations.
-- Add dataset preparation utilities.
-- Define evaluation protocols.
-- Investigate applications to network and biomedical graph data.
+## Roadmap
 
-## Research Principles
+- [ ] Formalize reusable heterogeneous graph schemas.
+- [ ] Implement reproducible GNN/HGNN baselines.
+- [ ] Add dataset preparation and validation utilities.
+- [ ] Define consistent train/validation/test protocols.
+- [ ] Compare homogeneous and heterogeneous message passing.
+- [ ] Add ablation studies and experiment tracking.
+- [ ] Investigate telecom and biomedical use cases.
 
-The project will prioritize modular implementations, clear experiments, reproducibility, and explicit separation between verified results and future hypotheses.
+## Engineering Principles
+
+The project follows modular implementation, explicit experiment configuration, testing, reproducibility, and a strict separation between **verified results** and future hypotheses.
 
 ## Technology
 
-Python • PyTorch • Graph Neural Networks • Heterogeneous Graph Learning
+`Python` · `PyTorch` · `PyTorch Geometric` · `GNN` · `HGNN` · `Graph Learning`
 
 ## Author
 
-Mohammad Mahdi Shafighi — M.Sc. Artificial Intelligence
+**Mohammad Mahdi Shafighi** — M.Sc. Artificial Intelligence
+
+Research interests: Network Intelligence · Reinforcement Learning · Graph Learning · Applied AI
